@@ -66,7 +66,7 @@ We conducted a detailed analysis of 442 diabetic patients to understand the dist
 
 These observations support the modeling choices made in the next phase.
 
-! [Distribution of the target variable: y] (images/11_eda_distribution_of_the_progression_y.png)
+![Distribution of the target variable: y](images/11_eda_distribution_of_the_progression_y.png)
 
 | Catégories | IMC (kg/m2) | Risques de complications |
 | --- | --- | --- |
@@ -106,7 +106,7 @@ We explored the normality of the `bmi` variable using visual and statistical met
 
 BMI shows slight right skewness. A log-transformation improves normality. We use `log(bmi)` for tests requiring normality, and raw `bmi` for interpretation.
 
-! [Analysis of the normality of bmi] (images/12_prob_bmi_normality_screenshot.png)
+![Analysis of the normality of bmi](images/12_prob_bmi_normality_screenshot.png)
 
 ### Conclusion on the normality of variables
 
@@ -156,7 +156,7 @@ NB: In this section we also created the variable bmi_cat2 which is equivalent to
 
 “A Mann-Whitney U test showed no significant difference in disease progression between men and women (p = 0.43).”
 
-! [Extract of the analysis of the independance between ‘sex’ and the progression ‘y’] (images/14_test_gender_vs_progression_y_screenshot.png)
+![Extract of the analysis of the independance between ‘sex’ and the progression ‘y’](images/14_test_gender_vs_progression_y_screenshot.png)
 
 # 2. Modeling - From Statistical Explanation to Prediction
 
@@ -186,7 +186,7 @@ Although linear regression offers interpretability, its performance is limited i
 
 **Extract of the validation of the hypothesis of linear regression**
 
-! [Extract of the analysis of the linear regression residuals] (images/222_diagnosctic_plot_of_residuals.png)
+![Extract of the analysis of the linear regression residuals](images/222_diagnosctic_plot_of_residuals.png)
 
 ## Predictive Modelisation
 
