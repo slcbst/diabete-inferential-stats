@@ -2,7 +2,7 @@
 
 **Statistical and Predictive Modeling of Diabetes Progression — Dataset NCSU**
 
-This project explores the influence of various clinical parameters on the progression of diabetes in patients one year after the start of a study. Using a rigorous approach combining descriptive and inferential statistics and modeling, this project aims to illustrate the links between data science and public health issues.
+This project explores the influence of various clinical parameters on the progression of diabetes in patients one year after the start of a study. Using an approach combining descriptive and inferential statistics and modeling, this project aims to illustrate the links between data science and public health issues.
 
 - source: [https://www4.stat.ncsu.edu/~boos/var.select/diabetes.html](https://www4.stat.ncsu.edu/%7Eboos/var.select/diabetes.html)
 - dataset: [https://www4.stat.ncsu.edu/~boos/var.select/diabetes.tab.txt](https://www4.stat.ncsu.edu/%7Eboos/var.select/diabetes.tab.txt)
@@ -92,11 +92,9 @@ So in this section we have analyzed the observed distributions and compared them
 
 ### Distribution of men and women
 
-- As we saw in the eda section, 53.2% of the patients in our sample are male, so at first glance our sample could be considered balanced.
+- As we saw in the EDA section, 53.2% of the patients in our sample are male, so at first glance our sample could be considered balanced.
 However, to be sure, we performed a proportion test (z-test, p = 0.183) and a binomial test. Both tests failed to reject the hypothesis of a 50% balanced distribution.
-    - NB: *we used a first approach with the normal distribution and the z-test
-     with n*p_0 > 5, but the results from the bernoulli test are more 
-    precise*.
+    - NB: *we used a first approach with the normal distribution and the z-test with n*p_0 > 5, but the results from the bernoulli test are more precise.
 - We therefore estimate that the proportion of men in the diabetic population represented here is compatible with a balanced proportion, with a 95% CI of [48.4%; 57.8%].
 - This estimate is consistent with worldwide data (≈ 50.4% men at birth, source https://www.ined.fr/fr/tout-savoir-population/memos-demo/faq/plus-hommes-ou-femmes-sur-terre/).
 
@@ -149,10 +147,10 @@ NB: In this section we also created the variable bmi_cat2 which is equivalent to
 
 **Question**: Does gender influence average disease progression?
 
-- $ \{ H_0 $: There is **no difference** in the progression y between men and women.
-- $ \{ H_1 $: There is a **significant difference**.
+- H₀: There is **no difference** in the progression y between men and women.
+- H₁: There is a **significant difference**.
 
-→ [ Analysis see the notebook]
+→ [Analyse Statistique - Notebook 1](notebooks/01_diabetes_statistical_analysis.ipynb)
 
 “A Mann-Whitney U test showed no significant difference in disease progression between men and women (p = 0.43).”
 
